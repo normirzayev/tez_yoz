@@ -7,8 +7,9 @@ let achko = document.querySelector(".achko");
 let qayta = document.querySelector(".qayta");
 let boshla = document.querySelector(".boshla");
 
+input.disabled = true
 function tezYoz() {
-  let minut = 3, sekund = 59
+  let minut = 1, sekund = 59
 
   let min = document.querySelector(".min");
   let sec = document.querySelector(".sec");
@@ -17,7 +18,6 @@ function tezYoz() {
     min.innerHTML = ` 0${minut} `;
     sec.innerHTML = ` : ${sekund}s`
   }
-  input.disabled = false
 
   let timeIs = setInterval(() => {
     if (sekund < 1) {
@@ -62,6 +62,7 @@ function tezYoz() {
   })
 }
 qayta.addEventListener("click", () => {
+  input.disabled = false    
   tezYoz();
   qayta.style.display = "none"
 })
