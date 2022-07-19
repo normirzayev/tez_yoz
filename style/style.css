@@ -1,1 +1,61 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #37373D;
+  padding: 10vw 0;
+}
+.container form {
+  text-align: center;
+  border-radius: 0.5vw;
+  padding: 1.3vw 0;
+  color: wheat;
+  width: 40vw;
+  height: 50vh;
+  background-color: #272727;
+  margin: 0 auto;
+  box-shadow: 0 0.5vw 1vw rgb(22, 22, 22);
+}
+.container form h1 {
+  font-size: 2.5vw;
+}
+.container form p {
+  font-size: 1.8vw;
+}
+.container form input {
+  margin: 3vw 0;
+  width: 35vw;
+  height: 8vh;
+  padding: 1vw;
+  font-size: 2vw;
+  border: none;
+  outline: none;
+  border-radius: 0.3vw;
+}
+.container form .natija {
+  font-size: 1.8vw;
+}
+.container form button {
+  width: 10vw;
+  height: 6vh;
+  font-size: 1.8vw;
+  text-transform: capitalize;
+  background-color: red;
+  border: none;
+  outline: none;
+  border-radius: 0.2vw;
+  cursor: pointer;
+  color: wheat;
+  margin: 1vw 0;
+  display: none;
+}/*# sourceMappingURL=style.css.map */
