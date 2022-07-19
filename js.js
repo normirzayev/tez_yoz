@@ -4,7 +4,8 @@ let massiv = text.split([" "]);
 let input = document.querySelector("input");
 let text2 = document.querySelector("#text");
 let achko = document.querySelector(".achko");
-let button = document.querySelector("button");
+let qayta = document.querySelector(".qayta");
+let boshla = document.querySelector(".boshla");
 
 function tezYoz() {
   let minut = 3, sekund = 59
@@ -30,10 +31,10 @@ function tezYoz() {
       clearInterval(timeIs)
       input.disabled = true
       input.value = ""
-      button.style.display = "inline-block"
+      qayta.style.display = "inline-block"
     }
     else{
-      button.style.display = "none"
+      qayta.style.display = "none"
     }
     sekund--
   }, 1000);
@@ -60,7 +61,7 @@ function tezYoz() {
     }
   })
 }
-tezYoz()
-button.addEventListener("click", () => {
+qayta.addEventListener("click", () => {
   tezYoz();
+  qayta.style.display = "none"
 })
